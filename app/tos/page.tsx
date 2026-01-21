@@ -4,7 +4,7 @@ export default function TOSPage() {
     return (
         <div className="min-h-screen py-24 px-6 flex items-center justify-center bg-transparent">
             <div className="max-w-4xl w-full text-center">
-                <h1 className="text-9xl font-bold mb-16 tracking-tight">TOS</h1>
+                <h1 className="text-9xl font-bold mb-16 tracking-tight italic">TOS</h1>
 
                 <div className="glass-strong rounded-[3rem] p-20 relative overflow-hidden group">
                     {/* Animated background stars effect (CSS only via gradient) */}

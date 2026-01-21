@@ -13,11 +13,13 @@
   --color-foreground: var(--foreground);
   --color-glass-bg: var(--glass-bg);
   --color-glass-border: var(--glass-border);
-  
+
   /* Vision Pro Accent */
-  --color-accent-blue: #007aff;
-  --color-accent-purple: #5e5ce6;
-  
+  --color-accent-blue: #ff2d55;
+  /* Premium Red */
+  --color-accent-purple: #8e8e93;
+  /* System Gray */
+
   /* Typography */
   --font-sans: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Segoe UI", sans-serif;
   --font-mono: "SF Mono", "Consolas", monospace;

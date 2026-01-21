@@ -46,7 +46,7 @@ export default function ContactPage() {
                     </div>
                     <div className="glass rounded-2xl p-6">
                         <h3 className="text-gray-500 font-bold mb-2 uppercase text-xs tracking-widest">General Inquiries</h3>
-                        <p className="text-lg opacity-70">jmccarthy35750@beaumontusd.k12.ca.us</p>
+                        <p className="text-lg opacity-70">cerwin42451@beaumontusd.k12.ca.us</p>
                     </div>
                 </div>
             </div>

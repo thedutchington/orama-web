@@ -25,7 +25,7 @@ export default function Home() {
       <section className="py-24 px-6">
         <div className="max-w-7xl mx-auto">
           <div className="flex flex-col md:flex-row items-end justify-between mb-16 gap-8">
-            <h2 className="text-6xl font-bold leading-tight">
+            <h2 className="text-6xl font-bold leading-tight italic">
               What<br />
               <span className="text-gray-400">Students Say.</span>
             </h2>
