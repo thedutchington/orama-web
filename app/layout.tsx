@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import { InteractionProvider } from "./components/InteractionProvider";
 
 export const metadata: Metadata = {
   title: "Orama - Tutoring, Simplified",
@@ -16,11 +17,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <Navbar />
-        <main className="min-h-screen pt-20">
-          {children}
-        </main>
-        <Footer />
+        <InteractionProvider>
+          <Navbar />
+          <main className="min-h-screen pt-20">
+            {children}
+          </main>
+          <Footer />
+        </InteractionProvider>
       </body>
     </html>
   );
