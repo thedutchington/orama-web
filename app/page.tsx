@@ -17,7 +17,7 @@ export default async function Home() {
           <RevealScan>
             <h1 className="text-8xl md:text-[11rem] font-bold mb-8 tracking-tighter transform-gpu transition-all duration-700 hover:scale-[1.05] hover:rotate-[-1deg] select-none italic">
               Tutoring,<br />
-              <span className="text-accent-red drop-shadow-[0_0_30px_rgba(255,45,85,0.4)]">simplified.</span>
+              <span className="text-moving-vibrant text-vibrant-glow">simplified.</span>
             </h1>
           </RevealScan>
           <RevealScan>
@@ -50,12 +50,12 @@ export default async function Home() {
             <RevealScan>
               <h2 className="text-6xl font-bold leading-tight italic">
                 What<br />
-                <span className="text-moving-red">Students Say.</span>
+                <span className="text-moving-vibrant text-vibrant-glow">Students Say.</span>
               </h2>
             </RevealScan>
 
             <div className="grid md:grid-cols-2 gap-8 flex-grow max-w-4xl">
-              <div className="glass-strong glass-active rounded-3xl p-8 hover:scale-[1.02] transition-all duration-300 border-white/5">
+              <div className="glass-vibrant rounded-3xl p-8 hover:scale-[1.02] transition-all duration-300">
                 <p className="text-lg mb-4 leading-relaxed font-medium">
                   Orama provides wonderful and professional tutoring that actually helps. Their approach makes complex concepts clear and supports real learning and understanding.
                 </p>
@@ -70,7 +70,7 @@ export default async function Home() {
                 </div>
               </div>
 
-              <div className="glass-strong glass-active rounded-3xl p-8 hover:scale-[1.02] transition-all duration-300 border-white/5">
+              <div className="glass-vibrant rounded-3xl p-8 hover:scale-[1.02] transition-all duration-300">
                 <p className="text-lg mb-4 leading-relaxed font-medium">
                   Orama leads very well and asks clarifying questions to ensure full understanding. The visuals/diagrams are extremely helpful.
                 </p>
@@ -94,7 +94,7 @@ export default async function Home() {
           <RevealScan>
             <h2 className="text-5xl md:text-7xl font-bold mb-16 tracking-tight">
               What Makes Us<br />
-              <span className="text-moving-red font-serif italic">Special?</span>
+              <span className="text-moving-vibrant text-vibrant-glow font-serif italic">Special?</span>
             </h2>
           </RevealScan>
 
@@ -162,7 +162,7 @@ export default async function Home() {
                     {post.title}
                   </h3>
                   <div className="text-sm text-white/40 meta-mono uppercase tracking-widest mt-2 sm:mt-0" suppressHydrationWarning>
-                    {new Date(post.date).toLocaleDateString('en-US', {
+                    {new Date(post.date + 'T12:00:00').toLocaleDateString('en-US', {
                       month: 'short',
                       day: '2-digit',
                       year: 'numeric'

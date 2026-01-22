@@ -35,7 +35,7 @@ export default async function BlogIndexPage() {
                                     </div>
                                 </div>
                                 <div className="text-sm md:text-base text-white/40 meta-mono font-medium whitespace-nowrap" suppressHydrationWarning>
-                                    {new Date(post.date).toLocaleDateString('en-US', {
+                                    {new Date(post.date + 'T12:00:00').toLocaleDateString('en-US', {
                                         month: 'short',
                                         day: '2-digit',
                                         year: 'numeric'

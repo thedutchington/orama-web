@@ -32,7 +32,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
                 <RevealScan>
                     <div className="mb-12">
                         <div className="text-accent-red meta-mono text-sm uppercase tracking-[0.3em] mb-4" suppressHydrationWarning>
-                            {new Date(postData.date).toLocaleDateString('en-US', {
+                            {new Date(postData.date + 'T12:00:00').toLocaleDateString('en-US', {
                                 month: 'long',
                                 day: 'numeric',
                                 year: 'numeric'
@@ -61,7 +61,8 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
                                    [&_a]:text-accent-red [&_a]:no-underline hover:[&_a]:underline
                                    [&_ul]:list-disc [&_ul]:pl-6 [&_ul]:mb-8 [&_ul]:text-gray-400
                                    [&_ol]:list-decimal [&_ol]:pl-6 [&_ol]:mb-8 [&_ol]:text-gray-400
-                                   [&_li]:mb-2"
+                                   [&_li]:mb-2
+                                   [&_img]:rounded-3xl [&_img]:border [&_img]:border-white/10 [&_img]:my-12 [&_img]:w-full [&_img]:h-auto"
                         dangerouslySetInnerHTML={{ __html: postData.contentHtml }}
                     />
                 </RevealScan>

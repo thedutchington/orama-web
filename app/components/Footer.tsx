@@ -71,7 +71,7 @@ export default function Footer() {
 
                 <div className="flex flex-col md:flex-row justify-between items-center gap-6 pt-12 border-t border-white/5">
                     <div className="text-[8px] text-white/20 meta-mono uppercase tracking-[0.5em]">
-                        v1.0.0 // 2026-January Release
+                        v1.0.1 // 2026-January-22 Release
                     </div>
                 </div>
             </div>
