@@ -5,7 +5,7 @@
 
 ![Orama Banner](public/ORamA.png)
 
-## 📖 About Notus
+## 📖 About The Orama Website
 
 This repository contains the source code for the "Orama" website. The platform is designed to connect students with high-achieving peer tutors, provide access to academic resources, and offer a streamlined booking experience.
 
