@@ -6,7 +6,7 @@ featured: true
 author: "Caden Erwin"
 ---
 
-# What’s Changing
+## What’s Changing
 
 We’re moving beyond Canva and transitioning to a **fully code-driven website** built with **Google Antigravity**, similar to how **Cassini** is developed. This shift allows us to introduce advanced animations, deeper interactivity, and a more refined experience overall.
 
@@ -14,9 +14,9 @@ This update is a core part of the **2026–2027 Orama rebrand**, focused on perf
 
 ---
 
-# What’s New
+## What’s New
 
-## Added Capabilities
+### Added Capabilities
 
 - Smooth, high-performance **animations**
 - Rich **interactive elements**
@@ -27,7 +27,7 @@ These changes give us far more creative and technical control than template-base
 
 ---
 
-# Service Updates
+## Service Updates
 
 - **New users:** Please review the **Terms of Service (TOS)** and **CSLA**, both available in the footer and on the Resources page, to understand how our services operate.
 - **Returning users:** We recommend re-reading the **TOS** and **CSLA** to stay informed about any updates since your last visit.
@@ -41,9 +41,9 @@ These changes give us far more creative and technical control than template-base
 
 ---
 
-# What’s Coming Next
+## What’s Coming Next
 
-## Conversational AI
+### Conversational AI
 
 We plan to introduce **Cassini-powered conversational AI**, available in both cloud-based and local configurations. This AI will be designed to:
 

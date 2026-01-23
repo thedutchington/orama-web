@@ -36,11 +36,6 @@ export default async function Home() {
           </div>
         </div>
 
-        {/* Cinematic Scroll Indicator */}
-        <div className="absolute bottom-12 left-1/2 -translate-x-1/2 flex flex-col items-center gap-4 opacity-30">
-          <div className="text-[10px] meta-mono tracking-[0.5em] uppercase">Scroll to Discover</div>
-          <div className="w-px h-12 bg-gradient-to-b from-accent-red to-transparent"></div>
-        </div>
       </section>
 
       {/* What Students Say Section */}
@@ -116,10 +111,10 @@ export default async function Home() {
             </div>
 
             <div className="glass p-8 rounded-3xl border-t-2 border-accent-gray/30 glass-active lg:hover:-translate-y-4 transition-transform duration-500">
-              <div className="text-accent-gray mb-4 font-mono text-xs tracking-widest uppercase">Excellence</div>
-              <h3 className="text-2xl font-bold mb-4">Passing Students.</h3>
+              <div className="text-accent-gray mb-4 font-mono text-xs tracking-widest uppercase">Excellence.</div>
+              <h3 className="text-2xl font-bold mb-4">4.0 GPA Scholars.</h3>
               <p className="text-gray-400 leading-relaxed">
-                Taught by passing students who are also active in ASB, ensuring you're learning from leaders who understand the current curriculum.
+                Guided by top-performing students who maintain a 4.0 GPA and lead within ASB. Learn the exact habits and strategies used by those mastering the current curriculum.
               </p>
             </div>
           </div>

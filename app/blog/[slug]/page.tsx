@@ -62,7 +62,8 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
                                    [&_ul]:list-disc [&_ul]:pl-6 [&_ul]:mb-8 [&_ul]:text-gray-400
                                    [&_ol]:list-decimal [&_ol]:pl-6 [&_ol]:mb-8 [&_ol]:text-gray-400
                                    [&_li]:mb-2
-                                   [&_img]:rounded-3xl [&_img]:border [&_img]:border-white/10 [&_img]:my-12 [&_img]:w-full [&_img]:h-auto"
+                                                                       [&_img]:rounded-3xl [&_img]:border [&_img]:border-white/10 [&_img]:my-12 [&_img]:max-w-2xl [&_img]:mx-auto [&_img]:block [&_img]:h-auto [&_img]:shadow-2xl hover:[&_img]:scale-[1.01] [&_img]:transition-transform [&_img]:duration-500"
+
                         dangerouslySetInnerHTML={{ __html: postData.contentHtml }}
                     />
                 </RevealScan>
