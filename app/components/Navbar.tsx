@@ -9,8 +9,10 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [time, setTime] = useState("");
   const [location, setLocation] = useState("LOCATING...");
+  const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
+    setMounted(true);
     const updateTime = () => {
       const now = new Date();
       setTime(now.toLocaleTimeString('en-US', {
@@ -50,16 +52,6 @@ export default function Navbar() {
     <>
       <nav className="fixed top-4 left-4 z-[999] pointer-events-none" suppressHydrationWarning>
         <Link href="/" className="flex items-center gap-2 hover:scale-105 transition-transform duration-300 group pointer-events-auto bg-black/40 backdrop-blur-xl border border-white/10 px-4 py-2 rounded-2xl shadow-xl">
-          <div className="relative">
-            <div className="absolute inset-0 bg-accent-red blur-lg opacity-20 group-hover:opacity-40 transition-opacity" />
-            <Image
-              src="/ORamA.png"
-              alt="Orama Logo"
-              width={32}
-              height={32}
-              className="relative z-10 dark:invert drop-shadow-[0_0_8px_rgba(255,45,85,0.5)]"
-            />
-          </div>
           <span className="text-xl font-bold tracking-tighter text-moving-vibrant text-vibrant-glow italic">
             orama.
           </span>
@@ -67,14 +59,21 @@ export default function Navbar() {
       </nav>
 
       <nav className="fixed top-4 right-4 z-[999] pointer-events-none" suppressHydrationWarning>
-        <div className="bg-black/40 backdrop-blur-xl border border-white/10 px-5 py-2.5 rounded-2xl shadow-xl flex items-center gap-4 pointer-events-auto">
-          <span className="text-[12px] meta-mono tracking-[0.2em] text-white/40">
-            {time}
-          </span>
-          <div className="w-[1px] h-3 bg-white/10" />
-          <span className="text-[12px] meta-mono tracking-[0.2em] text-white/80 font-bold uppercase">
-            {location}
-          </span>
+        <div className="bg-black/40 backdrop-blur-xl border border-white/10 px-5 py-2.5 rounded-2xl shadow-xl flex items-center gap-4 pointer-events-auto min-w-[150px] justify-center">
+          {mounted ? (
+            <>
+              <span className="text-[12px] meta-mono tracking-[0.2em] text-white/40">
+                {time}
+              </span>
+              <div className="w-[1px] h-3 bg-white/10" />
+              <span className="text-[12px] meta-mono tracking-[0.2em] text-white/80 font-bold uppercase">
+                {location}
+              </span>
+            </>
+          ) : (
+            // Initial SSR state to prevent layout shift but avoid mismatch error
+            <span className="text-[12px] meta-mono tracking-[0.2em] text-white/40 opacity-0">Loading...</span>
+          )}
         </div>
       </nav>
 

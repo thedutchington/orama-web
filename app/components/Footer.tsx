@@ -18,7 +18,7 @@ export default function Footer() {
                             />
                             <span className="text-xl font-bold italic tracking-tighter">orama.</span>
                         </div>
-                        <p className="text-[10px] text-gray-500 max-w-[200px] leading-relaxed meta-mono uppercase tracking-widest">
+                        <p className="text-[10px] text-content-gray max-w-[200px] leading-relaxed meta-mono uppercase tracking-widest">
                             Built by caden erwin & jayden mccarthy
                             <br />
                             Est. 2026 // Rights Reserved
@@ -27,11 +27,11 @@ export default function Footer() {
 
                     {/* Services Column */}
                     <div className="flex flex-col gap-4">
-                        <h4 className="text-[10px] font-bold uppercase tracking-[0.3em] text-gray-500 meta-mono">Services</h4>
+                        <h4 className="text-[10px] font-bold uppercase tracking-[0.3em] text-content-gray meta-mono">Services</h4>
                         <Link
                             href="https://orama-cassini.vercel.app/"
                             target="_blank"
-                            className="text-sm text-gray-400 hover:text-accent-red transition-colors w-fit font-medium"
+                            className="text-sm text-content-gray hover:text-accent-red transition-colors w-fit font-medium"
                         >
                             Cassini Whiteboard
                         </Link>
@@ -39,17 +39,17 @@ export default function Footer() {
 
                     {/* Legal Column */}
                     <div className="flex flex-col gap-4">
-                        <h4 className="text-[10px] font-bold uppercase tracking-[0.3em] text-gray-500 meta-mono">Legal</h4>
+                        <h4 className="text-[10px] font-bold uppercase tracking-[0.3em] text-content-gray meta-mono">Legal</h4>
                         <Link
                             href="/tos"
-                            className="text-sm text-gray-400 hover:text-accent-red transition-colors w-fit font-medium"
+                            className="text-sm text-content-gray hover:text-accent-red transition-colors w-fit font-medium"
                         >
                             Terms of Service
                         </Link>
                         <Link
                             href="https://github.com/Orama-Tech-Tutoring/Cassini/blob/main/LICENSE.md"
                             target="_blank"
-                            className="text-sm text-gray-400 hover:text-accent-red transition-colors w-fit font-medium"
+                            className="text-sm text-content-gray hover:text-accent-red transition-colors w-fit font-medium"
                         >
                             CSLA License
                         </Link>
@@ -57,12 +57,12 @@ export default function Footer() {
 
                     {/* Contact Column */}
                     <div className="flex flex-col gap-4">
-                        <h4 className="text-[10px] font-bold uppercase tracking-[0.3em] text-gray-500 meta-mono">Direct Contact</h4>
+                        <h4 className="text-[10px] font-bold uppercase tracking-[0.3em] text-content-gray meta-mono">Direct Contact</h4>
                         <div className="flex flex-col gap-2 text-sm text-gray-300 font-bold">
                             <p>951-842-9745 (CE)</p>
                             <p>909-353-8775 (JM)</p>
                         </div>
-                        <div className="flex flex-col gap-1 text-[9px] text-gray-500 meta-mono lowercase mt-2">
+                        <div className="flex flex-col gap-1 text-[9px] text-content-gray meta-mono lowercase mt-2">
                             <p>cerwin42451@beaumontusd.k12.ca.us</p>
                             <p>jmccarthy35750@beaumontusd.k12.ca.us</p>
                         </div>

@@ -56,11 +56,11 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
                                    [&_h4]:text-xl [&_h4]:font-bold [&_h4]:tracking-tight [&_h4]:mt-6 [&_h4]:mb-3 [&_h4]:text-white
                                    [&_h5]:text-lg [&_h5]:font-bold [&_h5]:mt-4 [&_h5]:mb-2 [&_h5]:text-white
                                    [&_h6]:text-base [&_h6]:font-bold [&_h6]:mt-4 [&_h6]:mb-2 [&_h6]:text-white
-                                   [&_p]:text-gray-400 [&_p]:text-lg [&_p]:leading-relaxed [&_p]:mb-8
+                                   [&_p]:text-content-gray [&_p]:text-lg [&_p]:leading-relaxed [&_p]:mb-8
                                    [&_strong]:text-white [&_strong]:font-bold
                                    [&_a]:text-accent-red [&_a]:no-underline hover:[&_a]:underline
-                                   [&_ul]:list-disc [&_ul]:pl-6 [&_ul]:mb-8 [&_ul]:text-gray-400
-                                   [&_ol]:list-decimal [&_ol]:pl-6 [&_ol]:mb-8 [&_ol]:text-gray-400
+                                   [&_ul]:list-disc [&_ul]:pl-6 [&_ul]:mb-8 [&_ul]:text-content-gray
+                                   [&_ol]:list-decimal [&_ol]:pl-6 [&_ol]:mb-8 [&_ol]:text-content-gray
                                    [&_li]:mb-2
                                                                        [&_img]:rounded-3xl [&_img]:border [&_img]:border-white/10 [&_img]:my-12 [&_img]:max-w-2xl [&_img]:mx-auto [&_img]:block [&_img]:h-auto [&_img]:shadow-2xl hover:[&_img]:scale-[1.01] [&_img]:transition-transform [&_img]:duration-500"
 

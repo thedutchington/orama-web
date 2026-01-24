@@ -21,7 +21,7 @@ export default async function Home() {
             </h1>
           </RevealScan>
           <RevealScan>
-            <p className="text-xl md:text-2xl text-gray-400 mb-12 max-w-2xl mx-auto meta-mono leading-relaxed opacity-80">
+            <p className="text-xl md:text-2xl text-content-gray mb-12 max-w-2xl mx-auto meta-mono leading-relaxed opacity-80">
               Orama is the one-stop-shop for free tutoring for Beaumont high school students.
             </p>
           </RevealScan>
@@ -60,7 +60,7 @@ export default async function Home() {
                   </div>
                   <div>
                     <div className="font-semibold">Jeremiah Anaya</div>
-                    <div className="text-sm text-gray-400 meta-mono uppercase tracking-tighter">Sophomore</div>
+                    <div className="text-sm text-content-gray meta-mono uppercase tracking-tighter">Sophomore</div>
                   </div>
                 </div>
               </div>
@@ -75,7 +75,7 @@ export default async function Home() {
                   </div>
                   <div>
                     <div className="font-semibold">Anonymous</div>
-                    <div className="text-sm text-gray-400 meta-mono uppercase tracking-tighter">Student</div>
+                    <div className="text-sm text-content-gray meta-mono uppercase tracking-tighter">Student</div>
                   </div>
                 </div>
               </div>
@@ -97,7 +97,7 @@ export default async function Home() {
             <div className="glass p-8 rounded-3xl border-t-2 border-accent-red/30 backdrop-blur-xl glass-active lg:hover:-translate-y-4 transition-transform duration-500">
               <div className="text-accent-red mb-4 font-mono text-xs tracking-widest uppercase">Integration</div>
               <h3 className="text-2xl font-bold mb-4">Your Control.</h3>
-              <p className="text-gray-400 leading-relaxed">
+              <p className="text-content-gray leading-relaxed">
                 We put the power in your hands. Our systems are built to integrate seamlessly with your existing workflow, giving you total control over how you learn.
               </p>
             </div>
@@ -105,7 +105,7 @@ export default async function Home() {
             <div className="glass p-8 rounded-3xl border-t-2 border-white/10 glass-active lg:hover:-translate-y-4 transition-transform duration-500">
               <div className="text-white/40 mb-4 font-mono text-xs tracking-widest uppercase">Accessibility</div>
               <h3 className="text-2xl font-bold mb-4">Free Tutoring.</h3>
-              <p className="text-gray-400 leading-relaxed">
+              <p className="text-content-gray leading-relaxed">
                 Available to all Freshman through Junior students at Beaumont High School. Quality education shouldn't have a price tag.
               </p>
             </div>
@@ -113,7 +113,7 @@ export default async function Home() {
             <div className="glass p-8 rounded-3xl border-t-2 border-accent-gray/30 glass-active lg:hover:-translate-y-4 transition-transform duration-500">
               <div className="text-accent-gray mb-4 font-mono text-xs tracking-widest uppercase">Excellence.</div>
               <h3 className="text-2xl font-bold mb-4">4.0 GPA Scholars.</h3>
-              <p className="text-gray-400 leading-relaxed">
+              <p className="text-content-gray leading-relaxed">
                 Guided by top-performing students who maintain a 4.0 GPA and lead within ASB. Learn the exact habits and strategies used by those mastering the current curriculum.
               </p>
             </div>
@@ -128,7 +128,7 @@ export default async function Home() {
             </div>
             <div>
               <h3 className="text-2xl font-bold mb-2">Relevant Curriculum.</h3>
-              <p className="text-gray-400 leading-relaxed">
+              <p className="text-content-gray leading-relaxed">
                 We use actual content from sources like <strong>CPM</strong> and <strong>NGSS</strong> that we have in our own classes. Since the material is the same 95% of the time, we know exactly how to help you master it.
               </p>
             </div>

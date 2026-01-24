@@ -134,22 +134,22 @@ export default function StaffPage() {
 
                                         <div className="space-y-8">
                                             <div className="group/item">
-                                                <div className="meta-mono text-[10px] text-gray-500 uppercase tracking-widest mb-1">Email Address</div>
+                                                <div className="meta-mono text-[10px] text-content-gray uppercase tracking-widest mb-1">Email Address</div>
                                                 <div className="text-xl font-medium text-gray-200 group-hover/item:text-accent-red transition-colors break-all">
                                                     {selectedMember.email}
                                                 </div>
                                             </div>
 
                                             <div className="group/item">
-                                                <div className="meta-mono text-[10px] text-gray-500 uppercase tracking-widest mb-1">Contact Phone</div>
+                                                <div className="meta-mono text-[10px] text-content-gray uppercase tracking-widest mb-1">Contact Phone</div>
                                                 <div className="text-xl font-medium text-gray-200 group-hover/item:text-accent-red transition-colors">
                                                     {selectedMember.phone}
                                                 </div>
                                             </div>
 
                                             <div className="group/item">
-                                                <div className="meta-mono text-[10px] text-gray-500 uppercase tracking-widest mb-1">Specializations</div>
-                                                <div className="text-lg text-gray-400 font-medium leading-relaxed">
+                                                <div className="meta-mono text-[10px] text-content-gray uppercase tracking-widest mb-1">Specializations</div>
+                                                <div className="text-lg text-content-gray font-medium leading-relaxed">
                                                     {selectedMember.subjects}
                                                 </div>
                                             </div>
@@ -170,7 +170,7 @@ export default function StaffPage() {
                                             </div>
                                         </div>
 
-                                        <div className="mt-12 flex items-center gap-4 text-xs text-gray-600 meta-mono uppercase tracking-widest">
+                                        <div className="mt-12 flex items-center gap-4 text-xs text-content-gray meta-mono uppercase tracking-widest">
                                             <span className="w-2 h-2 bg-accent-red rounded-full animate-pulse" />
                                             {selectedMember.date}
                                         </div>

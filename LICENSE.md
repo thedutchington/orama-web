@@ -41,7 +41,8 @@
 
 **4.2. Github Issues**.
 
-- Using the Github **issues** feature on the repository is allowed for reporting bugs, suggesting features, and discussing the Software. However, you are **strictly prohibited** from using the **issues** feature to **copy, distribute, publish, sublicense, transfer, sell, rent, lease, or otherwise make the source code available to any third party.**
+- a) Using the Github **issues** feature on the repository is allowed for reporting bugs, suggesting features, and discussing the Software. However, you are **strictly prohibited** from using the **issues** feature to **copy, distribute, publish, sublicense, transfer, sell, rent, lease, or otherwise make the source code available to any third party, that is not already released on the website at <https://orama-site.vercel.app/>**.
+- b) Code that is commited on github IS the same code that is released on the website at <https://orama-site.vercel.app/>, meaning the code already committed is "public," but code in production falls under section 4.2(a) as it is not commited on github.
 
 ### 5. Ownership
 

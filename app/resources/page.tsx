@@ -15,27 +15,27 @@ export default function ResourcesPage() {
                 {/* Subjects Section */}
                 <div className="mt-24">
                     <RevealScan>
-                        <h2 className="text-sm font-bold uppercase tracking-widest text-gray-500 mb-8 meta-mono">Subjects</h2>
+                        <h2 className="text-sm font-bold uppercase tracking-widest text-content-gray mb-8 meta-mono">Subjects</h2>
                     </RevealScan>
                     <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
                         <div className="glass-vibrant rounded-2xl p-8 hover:translate-y-[-4px] transition-transform duration-300 group">
                             <h3 className="text-2xl font-bold mb-2 group-hover:text-white transition-colors">Integrated Math 1-3</h3>
-                            <p className="text-gray-400 text-xs meta-mono uppercase">Based on Anderson's/Santanna's class progress</p>
+                            <p className="text-content-gray text-xs meta-mono uppercase">Based on Anderson's/Santanna's class progress</p>
                         </div>
 
                         <div className="glass-vibrant rounded-2xl p-8 hover:translate-y-[-4px] transition-transform duration-300 group">
                             <h3 className="text-2xl font-bold mb-2 group-hover:text-white transition-colors">Pre AP Biology</h3>
-                            <p className="text-gray-400 text-xs meta-mono uppercase">Advanced Placement Prep</p>
+                            <p className="text-content-gray text-xs meta-mono uppercase">Advanced Placement Prep</p>
                         </div>
 
                         <div className="glass-vibrant rounded-2xl p-8 hover:translate-y-[-4px] transition-transform duration-300 group">
                             <h3 className="text-2xl font-bold mb-2 group-hover:text-white transition-colors">Pre AP English 1-2</h3>
-                            <p className="text-gray-400 text-xs meta-mono uppercase">Based on Safai's class progress</p>
+                            <p className="text-content-gray text-xs meta-mono uppercase">Based on Safai's class progress</p>
                         </div>
 
                         <div className="glass-vibrant rounded-2xl p-8 hover:translate-y-[-4px] transition-transform duration-300 group">
                             <h3 className="text-2xl font-bold mb-2 group-hover:text-white transition-colors">Chemistry</h3>
-                            <p className="text-gray-400 text-xs meta-mono uppercase">Based on Ponce's class progress</p>
+                            <p className="text-content-gray text-xs meta-mono uppercase">Based on Ponce's class progress</p>
                         </div>
                     </div>
                 </div>
@@ -44,7 +44,7 @@ export default function ResourcesPage() {
                 <div className="mt-24 grid md:grid-cols-2 gap-12">
                     <div className="glass-vibrant rounded-2xl p-10 flex flex-col justify-between">
                         <div>
-                            <h2 className="text-sm font-bold uppercase tracking-widest text-gray-500 mb-6 meta-mono">Hours</h2>
+                            <h2 className="text-sm font-bold uppercase tracking-widest text-content-gray mb-6 meta-mono">Hours</h2>
                             <p className="text-3xl font-bold mb-8">Tutoring is available after school and during A lunch!</p>
                         </div>
                         <Link
@@ -58,15 +58,15 @@ export default function ResourcesPage() {
                     </div>
 
                     <div className="glass-vibrant rounded-2xl p-10">
-                        <h2 className="text-sm font-bold uppercase tracking-widest text-gray-500 mb-6 meta-mono">Contact</h2>
+                        <h2 className="text-sm font-bold uppercase tracking-widest text-content-gray mb-6 meta-mono">Contact</h2>
                         <div className="flex flex-col gap-6">
                             <div>
                                 <p className="text-xl font-bold">951-842-9745 (CE)</p>
-                                <p className="text-sm text-gray-400 meta-mono">cerwin42451@beaumontusd.k12.ca.us</p>
+                                <p className="text-sm text-content-gray meta-mono">cerwin42451@beaumontusd.k12.ca.us</p>
                             </div>
                             <div>
                                 <p className="text-xl font-bold">909-353-8775 (JM)</p>
-                                <p className="text-sm text-gray-400 meta-mono">jmccarthy35750@beaumontusd.k12.ca.us</p>
+                                <p className="text-sm text-content-gray meta-mono">jmccarthy35750@beaumontusd.k12.ca.us</p>
                             </div>
                             <div className="pt-2 border-t border-white/5">
                                 <Link
@@ -79,7 +79,7 @@ export default function ResourcesPage() {
                                     </div>
                                     <div>
                                         <p className="font-bold group-hover:text-accent-red transition-colors">@oramaatbhs</p>
-                                        <p className="text-[10px] text-gray-500 meta-mono uppercase tracking-widest">Official Instagram</p>
+                                        <p className="text-[10px] text-content-gray meta-mono uppercase tracking-widest">Official Instagram</p>
                                     </div>
                                 </Link>
                             </div>
