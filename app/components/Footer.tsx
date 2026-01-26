@@ -28,13 +28,6 @@ export default function Footer() {
                     {/* Services Column */}
                     <div className="flex flex-col gap-4">
                         <h4 className="text-[10px] font-bold uppercase tracking-[0.3em] text-content-gray meta-mono">Services</h4>
-                        <Link
-                            href="https://orama-cassini.vercel.app/"
-                            target="_blank"
-                            className="text-sm text-content-gray hover:text-accent-red transition-colors w-fit font-medium"
-                        >
-                            Cassini Whiteboard
-                        </Link>
                     </div>
 
                     {/* Legal Column */}
@@ -71,7 +64,7 @@ export default function Footer() {
 
                 <div className="flex flex-col md:flex-row justify-between items-center gap-6 pt-12 border-t border-white/5">
                     <div className="text-[15px] text-white/20 meta-mono uppercase tracking-[0.5em]">
-                        v1.0.2 // 2026-January-22-b Release
+                        v1.0.2 // 2026
                     </div>
                 </div>
             </div>
