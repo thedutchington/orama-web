@@ -4,7 +4,7 @@
 
 ### Strict Access-Only License with No Copying Permitted
 
-**Copyright (c) 2026; Orama & Cassini by Caden D. Erwin & Jayden R. McCarthy. All Rights Reserved.**
+**Copyright (c) 2026; Orama by Caden D. Erwin & Jayden R. McCarthy. All Rights Reserved.**
 
 ---
 
@@ -12,7 +12,7 @@
 
 **1.1. "Software"** refers to the original source code, object code, assets, and design elements of the Orama Website (currently hosted at *orama-site.vercel.app*), including all its components, associated documentation, and any future updates or modifications provided by the Licensor.
 
-**1.2. "Licensor"** refers to the copyright holders: Orama & Cassini by Caden D. Erwin & Jayden R. McCarthy.
+**1.2. "Licensor"** refers to the copyright holders: Orama by Caden D. Erwin & Jayden R. McCarthy.
 
 **1.3. "Licensee"** refers to the individual or entity accessing or viewing the Software.
 
@@ -72,11 +72,11 @@ IN NO EVENT SHALL THE LICENSOR, AUTHORS, OR COPYRIGHT HOLDERS BE LIABLE FOR ANY 
 
 **9.3. Information Waiver.** 
 - Using the Orama website, you give the permission to request for your device location, local device time, and/or local device timezone to display the correct time and location on the website, including the "Spatial Meta" header (the clock and location display in the top-right corner of the website). No other information is collected or stored on the website, at the URL <https://orama-site.vercel.app/>. 
-- If you submit information to the booking calendar, email to staff, or call any of the listed phone numbers, that information is not stored on the website, but is instead sent directly to the staff member you are contacting. In which that information is NOT covered under the **OWCLA,** but is NOT covered under the **CSLA** either. See [Orama TOS](https://docs.google.com/document/d/1u6-Ij8HUsSvo7aIFT95KPiEN_C4cUXIoUdrpgI-obLc/edit?tab=t.0) for the information we store, regardless of the OWCLA and CSLA.
+- If you submit information to the booking calendar, email to staff, or call any of the listed phone numbers, that information is not stored on the website, but is instead sent directly to the staff member you are contacting. In which that information is NOT covered under the **OWCLA.**
 
 ### 10. Orama Tutoring Services
 
-**10.1. Mandatory Agreement.** Everyone who uses the Orama website, whether for scheduling tutoring sessions, accessing resources, searching staff profiles, or other purposes, must agree to and comply with the terms of this Orama Website Code License Agreement (OWCLA), and the [Cassini Software License Agreement (CSLA)](https://github.com/Orama-Tech-Tutoring/Cassini/blob/main/LICENSE.md).
+**10.1. Mandatory Agreement.** Everyone who uses the Orama website, whether for scheduling tutoring sessions, accessing resources, searching staff profiles, or other purposes, must agree to and comply with the terms of this Orama Website Code License Agreement (OWCLA).
 
 ### 11. Contact and Inquiries
 

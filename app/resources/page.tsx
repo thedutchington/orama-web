@@ -87,37 +87,31 @@ export default function ResourcesPage() {
                     </div>
                 </div>
 
-                {/* Cassini Section */}
+                {/* Things We Use Section */}
                 <div className="mt-24">
                     <div className="glass-vibrant rounded-[2.5rem] p-12 relative overflow-hidden group">
                         <div className="absolute top-0 right-0 w-64 h-64 bg-accent-red/10 blur-[80px] rounded-full -translate-y-1/2 translate-x-1/2" />
 
                         <RevealScan>
                             <h2 className="text-7xl font-bold mb-8 tracking-tighter italic">
-                                <span className="text-moving-vibrant text-vibrant-glow">CASSINI.</span>
+                                <span className="text-moving-vibrant text-vibrant-glow">THINGS WE USE.</span>
                             </h2>
                         </RevealScan>
 
                         <div className="max-w-3xl">
                             <p className="text-xl text-gray-300 mb-10 leading-relaxed font-medium">
-                                Introducing Cassini, our Orama based whiteboard application. Used by the tutors and the students alike, it is a powerful whiteboard to describe and show your diagrams and work in the fullest detail.
+                                A collection of powerful, open-source tools we use for tutoring and development.
                             </p>
 
                             <div className="flex flex-col sm:flex-row gap-6">
                                 <Link
-                                    href="https://orama-cassini.vercel.app/"
-                                    target="_blank"
-                                    className="px-10 py-5 bg-accent-red text-white rounded-2xl font-bold hover:bg-red-600 transition-all text-center lg:hover:scale-105"
-                                >
-                                    OPEN CASSINI
-                                </Link>
-
-                                <Link
-                                    href="https://github.com/Orama-Tech-Tutoring/Cassini/blob/main/LICENSE.md"
+                                    href="https://excalidraw.com"
                                     target="_blank"
                                     className="px-10 py-5 bg-white/5 border border-white/10 text-white rounded-2xl font-bold hover:bg-white/10 transition-all text-center lg:hover:scale-105 meta-mono text-xs uppercase tracking-widest flex items-center justify-center"
+                                    title="ExcaliDraw Whiteboard (EDW)"
                                 >
-                                    View CSLA
+                                    <img src="/excali.jpg" alt="Excalidraw" className="w-6 h-6 mr-4" />
+                                    Excalidraw
                                 </Link>
                             </div>
                         </div>

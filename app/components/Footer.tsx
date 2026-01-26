@@ -39,13 +39,6 @@ export default function Footer() {
                         >
                             Terms of Service
                         </Link>
-                        <Link
-                            href="https://github.com/Orama-Tech-Tutoring/Cassini/blob/main/LICENSE.md"
-                            target="_blank"
-                            className="text-sm text-content-gray hover:text-accent-red transition-colors w-fit font-medium"
-                        >
-                            CSLA License
-                        </Link>
                     </div>
 
                     {/* Contact Column */}
