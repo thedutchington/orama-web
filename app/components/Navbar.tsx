@@ -50,15 +50,20 @@ export default function Navbar() {
 
   return (
     <>
+      {/* Top Left Logo - Safe for SSR */}
       <nav className="fixed top-4 left-4 z-[999] pointer-events-none" suppressHydrationWarning>
-        <Link href="/" className="flex items-center gap-2 hover:scale-105 transition-transform duration-300 group pointer-events-auto bg-black/40 backdrop-blur-xl border border-white/10 px-4 py-2 rounded-2xl shadow-xl">
+        <Link
+          href="/"
+          className="flex items-center gap-2 hover:scale-105 transition-transform duration-300 group pointer-events-auto bg-black/40 backdrop-blur-xl border border-white/10 px-4 py-2 rounded-2xl shadow-xl"
+        >
           <span className="text-xl font-bold tracking-tighter text-moving-vibrant text-vibrant-glow italic">
             orama.
           </span>
         </Link>
       </nav>
 
-      <nav className="fixed top-4 right-4 z-[999] pointer-events-none" suppressHydrationWarning>
+      {/* Top Right Meta - Client Only for dynamic data */}
+      <nav className="fixed top-4 right-4 z-[999] pointer-events-none" suppressHydrationWarning={true}>
         <div className="bg-black/40 backdrop-blur-xl border border-white/10 px-5 py-2.5 rounded-2xl shadow-xl flex items-center gap-4 pointer-events-auto min-w-[150px] justify-center">
           {mounted ? (
             <>
@@ -71,8 +76,7 @@ export default function Navbar() {
               </span>
             </>
           ) : (
-            // Initial SSR state to prevent layout shift but avoid mismatch error
-            <span className="text-[12px] meta-mono tracking-[0.2em] text-white/40 opacity-0">Loading...</span>
+            <div className="w-24 h-4 bg-white/5 animate-pulse rounded" suppressHydrationWarning />
           )}
         </div>
       </nav>

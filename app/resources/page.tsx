@@ -1,9 +1,28 @@
+"use client";
+
 import Link from "next/link";
+import Image from "next/image";
+import { useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 import { RevealScan } from "../components/RevealScan";
 
 export default function ResourcesPage() {
+    const [selectedTool, setSelectedTool] = useState<any>(null);
+
+    const tools = [
+        {
+            name: "Excalidraw",
+            description: "ExcaliDraw Whiteboard (EDW)",
+            image: "/excali.jpg",
+            link: "https://excalidraw.com",
+            tag: "Whiteboard",
+            why: "Excalidraw provides a superior collaborative drawing experience with faster performance and a more intuitive toolset. It has officially replaced Cassini following its deprecation, as Cassini no longer lived up to our high technical expectations.",
+            initials: "ED"
+        }
+    ];
+
     return (
-        <div className="min-h-screen py-24 px-6 relative">
+        <div className="min-h-screen py-24 px-6 relative text-white">
             <div className="max-w-7xl mx-auto relative z-10">
                 {/* Header */}
                 <RevealScan>
@@ -18,29 +37,29 @@ export default function ResourcesPage() {
                         <h2 className="text-sm font-bold uppercase tracking-widest text-content-gray mb-8 meta-mono">Subjects</h2>
                     </RevealScan>
                     <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-                        <div className="glass-vibrant rounded-2xl p-8 hover:translate-y-[-4px] transition-transform duration-300 group">
+                        <div className="glass-vibrant rounded-2xl p-8 hover:translate-y-[-4px] transition-transform duration-300 group cursor-default">
                             <h3 className="text-2xl font-bold mb-2 group-hover:text-white transition-colors">Integrated Math 1-3</h3>
                             <p className="text-content-gray text-xs meta-mono uppercase">Based on Anderson's/Santanna's class progress</p>
                         </div>
 
-                        <div className="glass-vibrant rounded-2xl p-8 hover:translate-y-[-4px] transition-transform duration-300 group">
+                        <div className="glass-vibrant rounded-2xl p-8 hover:translate-y-[-4px] transition-transform duration-300 group cursor-default">
                             <h3 className="text-2xl font-bold mb-2 group-hover:text-white transition-colors">Pre AP Biology</h3>
                             <p className="text-content-gray text-xs meta-mono uppercase">Advanced Placement Prep</p>
                         </div>
 
-                        <div className="glass-vibrant rounded-2xl p-8 hover:translate-y-[-4px] transition-transform duration-300 group">
+                        <div className="glass-vibrant rounded-2xl p-8 hover:translate-y-[-4px] transition-transform duration-300 group cursor-default">
                             <h3 className="text-2xl font-bold mb-2 group-hover:text-white transition-colors">Pre AP English 1-2</h3>
                             <p className="text-content-gray text-xs meta-mono uppercase">Based on Safai's class progress</p>
                         </div>
 
-                        <div className="glass-vibrant rounded-2xl p-8 hover:translate-y-[-4px] transition-transform duration-300 group">
+                        <div className="glass-vibrant rounded-2xl p-8 hover:translate-y-[-4px] transition-transform duration-300 group cursor-default">
                             <h3 className="text-2xl font-bold mb-2 group-hover:text-white transition-colors">Chemistry</h3>
                             <p className="text-content-gray text-xs meta-mono uppercase">Based on Ponce's class progress</p>
                         </div>
                     </div>
                 </div>
 
-                {/* Hours Section */}
+                {/* Hours & Contact Section */}
                 <div className="mt-24 grid md:grid-cols-2 gap-12">
                     <div className="glass-vibrant rounded-2xl p-10 flex flex-col justify-between">
                         <div>
@@ -89,35 +108,147 @@ export default function ResourcesPage() {
 
                 {/* Things We Use Section */}
                 <div className="mt-24">
-                    <div className="glass-vibrant rounded-[2.5rem] p-12 relative overflow-hidden group">
-                        <div className="absolute top-0 right-0 w-64 h-64 bg-accent-red/10 blur-[80px] rounded-full -translate-y-1/2 translate-x-1/2" />
+                    <RevealScan>
+                        <h2 className="text-sm font-bold uppercase tracking-widest text-content-gray mb-8 meta-mono">Things We Use</h2>
+                    </RevealScan>
 
-                        <RevealScan>
-                            <h2 className="text-7xl font-bold mb-8 tracking-tighter italic">
-                                <span className="text-moving-vibrant text-vibrant-glow">THINGS WE USE.</span>
-                            </h2>
-                        </RevealScan>
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+                        {tools.map((tool, index) => (
+                            <motion.div
+                                key={tool.name}
+                                layoutId={`tool-card-${tool.name}`}
+                                onClick={() => setSelectedTool(tool)}
+                                className="group block perspective-1000 cursor-pointer"
+                                initial={{ opacity: 0, y: 20 }}
+                                animate={{ opacity: 1, y: 0 }}
+                                transition={{ delay: index * 0.1 }}
+                            >
+                                <div className="glass-vibrant aspect-[16/9] rounded-3xl relative overflow-hidden transform-gpu transition-all duration-700 group-hover:scale-[1.02] border border-white/10 active:scale-95 shadow-2xl">
+                                    {/* Image with overlay */}
+                                    <div className="absolute inset-0">
+                                        <Image
+                                            src={tool.image}
+                                            alt={tool.name}
+                                            fill
+                                            className="object-cover opacity-40 group-hover:opacity-60 transition-all duration-700 group-hover:scale-110"
+                                            sizes="(max-width: 768px) 100vw, 50vw"
+                                            loading="eager"
+                                        />
+                                        <div className="absolute inset-0 bg-gradient-to-t from-black via-black/20 to-transparent opacity-80" />
+                                    </div>
 
-                        <div className="max-w-3xl">
-                            <p className="text-xl text-gray-300 mb-10 leading-relaxed font-medium">
-                                A collection of powerful, open-source tools we use for tutoring and development.
-                            </p>
-
-                            <div className="flex flex-col sm:flex-row gap-6">
-                                <Link
-                                    href="https://excalidraw.com"
-                                    target="_blank"
-                                    className="px-10 py-5 bg-white/5 border border-white/10 text-white rounded-2xl font-bold hover:bg-white/10 transition-all text-center lg:hover:scale-105 meta-mono text-xs uppercase tracking-widest flex items-center justify-center"
-                                    title="ExcaliDraw Whiteboard (EDW)"
-                                >
-                                    <img src="/excali.jpg" alt="Excalidraw" className="w-6 h-6 mr-4" />
-                                    Excalidraw
-                                </Link>
-                            </div>
-                        </div>
+                                    {/* Content inside card */}
+                                    <div className="absolute bottom-10 left-10 right-10">
+                                        <div className="flex flex-col gap-2">
+                                            <div className="text-[10px] font-bold text-accent-red meta-mono uppercase tracking-[0.3em] mb-1">
+                                                {tool.tag}
+                                            </div>
+                                            <h3 className="text-4xl font-bold tracking-tighter italic">
+                                                {tool.name}.
+                                            </h3>
+                                            <p className="text-content-gray meta-mono text-xs uppercase tracking-widest opacity-0 group-hover:opacity-100 transition-all duration-500 translate-y-2 group-hover:translate-y-0">
+                                                Click to learn more
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </motion.div>
+                        ))}
                     </div>
                 </div>
             </div>
+
+            {/* Cinematic Tool Modal */}
+            <AnimatePresence>
+                {selectedTool && (
+                    <>
+                        <motion.div
+                            initial={{ opacity: 0 }}
+                            animate={{ opacity: 1 }}
+                            exit={{ opacity: 0 }}
+                            onClick={() => setSelectedTool(null)}
+                            className="fixed inset-0 bg-black/80 backdrop-blur-2xl z-[1000] cursor-pointer"
+                        />
+                        <div className="fixed inset-0 flex items-center justify-center p-6 z-[1001] pointer-events-none">
+                            <motion.div
+                                layoutId={`tool-card-${selectedTool.name}`}
+                                className="w-full max-w-4xl glass-strong rounded-[2.5rem] overflow-hidden border border-white/10 shadow-2xl pointer-events-auto relative border-trace"
+                                initial={{ scale: 0.9, opacity: 0 }}
+                                animate={{ scale: 1, opacity: 1 }}
+                                exit={{ scale: 0.9, opacity: 0 }}
+                            >
+                                <div className="border-trace-cover" />
+                                <div className="flex flex-col md:flex-row relative z-10">
+                                    {/* Modal Image Side */}
+                                    <div className="w-full md:w-1/2 aspect-square relative bg-black/20">
+                                        <Image
+                                            src={selectedTool.image}
+                                            alt={selectedTool.name}
+                                            fill
+                                            className="object-cover opacity-90"
+                                            sizes="(max-width: 768px) 100vw, 50vw"
+                                        />
+                                        <button
+                                            onClick={() => setSelectedTool(null)}
+                                            className="absolute top-6 left-6 p-3 bg-black/40 backdrop-blur-md rounded-full text-white hover:bg-accent-red transition-colors group z-20"
+                                        >
+                                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
+                                                <path d="M19 12H5M12 19l-7-7 7-7" />
+                                            </svg>
+                                        </button>
+                                    </div>
+
+                                    {/* Modal Info Side */}
+                                    <div className="w-full md:w-1/2 p-12 flex flex-col justify-center">
+                                        <div className="mb-12">
+                                            <div className="text-accent-red meta-mono text-sm uppercase tracking-[0.3em] mb-4">
+                                                {selectedTool.tag}
+                                            </div>
+                                            <h2 className="text-6xl font-bold tracking-tighter capitalize mb-2 italic">
+                                                {selectedTool.name}.
+                                            </h2>
+                                            <div className="h-1 w-24 bg-accent-red/20 rounded-full" />
+                                        </div>
+
+                                        <div className="space-y-8">
+                                            <div className="group/item">
+                                                <div className="meta-mono text-[10px] text-content-gray uppercase tracking-widest mb-1">Official Name</div>
+                                                <div className="text-xl font-medium text-gray-200">
+                                                    {selectedTool.description}
+                                                </div>
+                                            </div>
+
+                                            <div className="group/item">
+                                                <div className="meta-mono text-[10px] text-content-gray uppercase tracking-widest mb-1">Why We Use It</div>
+                                                <div className="text-lg text-content-gray font-medium leading-relaxed">
+                                                    {selectedTool.why}
+                                                </div>
+                                            </div>
+
+                                            <div className="pt-4">
+                                                <Link
+                                                    href={selectedTool.link}
+                                                    target="_blank"
+                                                    className="inline-flex items-center gap-4 px-8 py-4 bg-white/5 border border-white/10 rounded-2xl hover:bg-white/10 hover:border-accent-red/50 hover:scale-[1.02] transition-all group/launch shadow-xl"
+                                                >
+                                                    <span className="text-sm font-bold meta-mono uppercase tracking-[0.2em] group-hover/launch:text-accent-red transition-colors">
+                                                        Launch Whiteboard
+                                                    </span>
+                                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" className="text-white/40 group-hover/launch:text-accent-red transition-colors">
+                                                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                                                        <polyline points="15 3 21 3 21 9" />
+                                                        <line x1="10" y1="14" x2="21" y2="3" />
+                                                    </svg>
+                                                </Link>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </motion.div>
+                        </div>
+                    </>
+                )}
+            </AnimatePresence>
         </div>
     );
 }
